@@ -24,7 +24,7 @@ Variant). This class does not depend on mcrypt. Encryption is
 relatively fast, decryption relatively slow. Original code from
 http://vader.brad.ac.uk/tea/source.shtml#new_ansi
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Klasa implementuj±ca Tiny Encryption Algorithm (TEA) (nowy wariant).
