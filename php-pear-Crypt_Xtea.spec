@@ -1,6 +1,7 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		Crypt
 %define		_subclass	Xtea
+%define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - the Tiny Encryption Algorithm (TEA) (New Variant)
 Summary(pl):	%{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
@@ -22,11 +23,15 @@ Variant). This class does not depend on mcrypt. Encryption is
 relatively fast, decryption relatively slow. Original code from
 http://vader.brad.ac.uk/tea/source.shtml#new_ansi
 
+This class has in PEAR status: %{_status}.
+
 %description -l pl
 Klasa implementuj±ca Tiny Encryption Algorithm (TEA) (nowy wariant).
 Ta klasa nie zale¿y od mcrypt. Szyfrowanie jest stosunkowo szybkie,
 rozkodowanie relatywnie wolne. Oryginalny kod:
 http://vader.brad.ac.uk/tea/source.shtml#new_ansi
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
