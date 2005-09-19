@@ -13,7 +13,7 @@ Group:		Development/Languages/PHP
 # Source0-md5:	77a3221bdae2bfa6d5c5b69ef9c52de2
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/package/Crypt_Xtea/
-BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	sed >= 4.0
 Requires:	php-pear
 BuildArch:	noarch
