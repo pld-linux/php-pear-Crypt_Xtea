@@ -7,7 +7,7 @@ Summary:	%{_pearname} - the Tiny Encryption Algorithm (TEA) (New Variant)
 Summary(pl):	%{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
 Name:		php-pear-%{_pearname}
 Version:	1.0
-Release:	3.2
+Release:	3.3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 # Source0-md5:	77a3221bdae2bfa6d5c5b69ef9c52de2
@@ -40,6 +40,7 @@ Summary:	Tests for PEAR::%{_pearname}
 Summary(pl):	Testy dla PEAR::%{_pearname}
 Group:		Development
 Requires:	%{name} = %{epoch}:%{version}-%{release}
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
