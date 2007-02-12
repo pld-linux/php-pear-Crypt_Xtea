@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - the Tiny Encryption Algorithm (TEA) (New Variant)
-Summary(pl):	%{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
+Summary(pl.UTF-8):   %{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	5
@@ -29,9 +29,9 @@ http://vader.brad.ac.uk/tea/source.shtml#new_ansi
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Klasa implementuj±ca Tiny Encryption Algorithm (TEA) (nowy wariant).
-Ta klasa nie zale¿y od mcrypt. Szyfrowanie jest stosunkowo szybkie,
+%description -l pl.UTF-8
+Klasa implementujÄ…ca Tiny Encryption Algorithm (TEA) (nowy wariant).
+Ta klasa nie zaleÅ¼y od mcrypt. Szyfrowanie jest stosunkowo szybkie,
 rozkodowanie relatywnie wolne. Oryginalny kod:
 http://vader.brad.ac.uk/tea/source.shtml#new_ansi
 
@@ -39,7 +39,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -48,7 +48,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
