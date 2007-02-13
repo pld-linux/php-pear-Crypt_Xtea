@@ -4,7 +4,7 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - the Tiny Encryption Algorithm (TEA) (New Variant)
-Summary(pl.UTF-8):   %{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
+Summary(pl.UTF-8):	%{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	5
@@ -39,7 +39,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
