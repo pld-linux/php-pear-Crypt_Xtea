@@ -11,8 +11,8 @@ Release:	5
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	77a3221bdae2bfa6d5c5b69ef9c52de2
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	77a3221bdae2bfa6d5c5b69ef9c52de2
 URL:		http://pear.php.net/package/Crypt_Xtea/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-12
