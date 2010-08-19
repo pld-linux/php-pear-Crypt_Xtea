@@ -6,13 +6,13 @@
 Summary:	%{_pearname} - the Tiny Encryption Algorithm (TEA) (New Variant)
 Summary(pl.UTF-8):	%{_pearname} - Tiny Encryption Algorithm (TEA) (nowy wariant)
 Name:		php-pear-%{_pearname}
-Version:	1.0
-Release:	6
+Version:	1.1.0
+Release:	1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	77a3221bdae2bfa6d5c5b69ef9c52de2
+# Source0-md5:	32fa48dcbd8f6f4bb9f386334a946a4a
 URL:		http://pear.php.net/package/Crypt_Xtea/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-12
@@ -54,12 +54,6 @@ Testy dla PEAR::%{_pearname}.
 %prep
 %pear_package_setup
 
-# this should be in tests.
-cd ./%{php_pear_dir}
-install -d tests/%{_pearname}
-sed -i 's,Xtea.php,Crypt/Xtea.php,' %{_class}/%{_subclass}Test.php
-mv %{_class}/%{_subclass}Test.php tests/%{_pearname}
-
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{php_pear_dir}
@@ -73,6 +67,8 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/*.php
+
+%{php_pear_dir}/data/%{_pearname}
 
 %files tests
 %defattr(644,root,root,755)
